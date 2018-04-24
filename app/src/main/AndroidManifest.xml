@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="org.secuso.privacyfriendlypasswordgenerator">
+    package="ir.hatamiarash.passwordgenerator">
 
     <supports-screens
         android:anyDensity="true"
@@ -16,7 +16,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name="org.secuso.privacyfriendlypasswordgenerator.activities.SplashActivity"
+            android:name="ir.hatamiarash.passwordgenerator.activities.SplashActivity"
             android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -26,46 +26,46 @@
         </activity>
         <activity
             android:name=".tutorial.TutorialActivity"
-            android:parentActivityName="org.secuso.privacyfriendlypasswordgenerator.activities.MainActivity"
+            android:parentActivityName="ir.hatamiarash.passwordgenerator.activities.MainActivity"
             android:theme="@style/AppTheme.NoActionBar"/>
         <activity
             android:name=".tutorial.MasterPWTutorialActivity"
-            android:parentActivityName="org.secuso.privacyfriendlypasswordgenerator.activities.MainActivity"
+            android:parentActivityName="ir.hatamiarash.passwordgenerator.activities.MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="org.secuso.privacyfriendlypasswordgenerator.activities.MainActivity" />
+                android:value="ir.hatamiarash.passwordgenerator.activities.MainActivity" />
         </activity>
         <activity
-            android:name="org.secuso.privacyfriendlypasswordgenerator.activities.MainActivity"
+            android:name="ir.hatamiarash.passwordgenerator.activities.MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar"/>
         <activity
-            android:name="org.secuso.privacyfriendlypasswordgenerator.activities.AboutActivity"
+            android:name="ir.hatamiarash.passwordgenerator.activities.AboutActivity"
             android:label="@string/about"
-            android:parentActivityName="org.secuso.privacyfriendlypasswordgenerator.activities.MainActivity"
+            android:parentActivityName="ir.hatamiarash.passwordgenerator.activities.MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="org.secuso.privacyfriendlypasswordgenerator.activities.MainActivity" />
+                android:value="ir.hatamiarash.passwordgenerator.activities.MainActivity" />
         </activity>
         <activity
-            android:name="org.secuso.privacyfriendlypasswordgenerator.activities.HelpActivity"
+            android:name="ir.hatamiarash.passwordgenerator.activities.HelpActivity"
             android:label="@string/help"
-            android:parentActivityName="org.secuso.privacyfriendlypasswordgenerator.activities.MainActivity"
+            android:parentActivityName="ir.hatamiarash.passwordgenerator.activities.MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="org.secuso.privacyfriendlypasswordgenerator.activities.MainActivity" />
+                android:value="ir.hatamiarash.passwordgenerator.activities.MainActivity" />
         </activity>
         <activity
-            android:name="org.secuso.privacyfriendlypasswordgenerator.activities.SettingsActivity"
+            android:name="ir.hatamiarash.passwordgenerator.activities.SettingsActivity"
             android:label="@string/title_activity_settings"
-            android:parentActivityName="org.secuso.privacyfriendlypasswordgenerator.activities.MainActivity"
+            android:parentActivityName="ir.hatamiarash.passwordgenerator.activities.MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="org.secuso.privacyfriendlypasswordgenerator.activities.MainActivity" />
+                android:value="ir.hatamiarash.passwordgenerator.activities.MainActivity" />
         </activity>
     </application>
 

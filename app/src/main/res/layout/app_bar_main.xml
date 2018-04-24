@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="org.secuso.privacyfriendlypasswordgenerator.activities.MainActivity">
+    tools:context="ir.hatamiarash.passwordgenerator.activities.MainActivity">
 
     <include layout="@layout/toolbar" />
 
@@ -17,7 +17,7 @@
         android:layout_gravity="bottom|end"
         android:layout_margin="@dimen/fab_margin"
         android:src="@drawable/plus"
-        app:layout_behavior="org.secuso.privacyfriendlypasswordgenerator.helpers.ScrollAwareFABBehavior" />
+        app:layout_behavior="ir.hatamiarash.passwordgenerator.helpers.ScrollAwareFABBehavior" />
 
     <LinearLayout
         android:id="@+id/insert_alert"
