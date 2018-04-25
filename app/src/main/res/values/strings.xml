@@ -15,26 +15,26 @@
     <!--###METADATA_LIST###-->
     <string name="undo">Undo</string>
     <string name="item_deleted">deleted.</string>
-    <string name="initial_alert">ADD ACCOUNT</string>
+    <string name="initial_alert">اضافه کردن</string>
 
     <!--###ADD_METADATA###-->
     <string name="placeholder_no_data" translatable="false">-</string>
-    <string name="add_metadata_heading">Add new account</string>
-    <string name="domain">نام حساب:</string>
+    <string name="add_metadata_heading">حساب جدید</string>
+    <string name="domain">نام حساب</string>
     <string name="username">نام کاربری:</string>
-    <string name="username_optional">نام کاربری (اختیاری):</string>
-    <string name="characterset_add">رمز عبور شامل:</string>
+    <string name="username_optional">نام کاربری (اختیاری)</string>
+    <string name="characterset_add">رمز عبور شامل :</string>
     <string name="special_characters">کارکترها (+!#)</string>
     <string name="letters_upper">حروف بزرگ (ABC)</string>
     <string name="letters_lower">حروف کوچک (abc)</string>
     <string name="numbers">اعداد (123)</string>
-    <string name="length">طول: </string>
-    <string name="iteration">نسخه: </string>
+    <string name="length">طول : </string>
+    <string name="iteration">نسخه : </string>
     <string name="add_domain_message">Please add an account name.</string>
     <string name="add_character_message">Please choose at least one character type.</string>
     <string name="change_version_closed">▶ تغییر نسخه</string>
     <string name="change_version_opened">▼ تغییر نسخه</string>
-    <string name="current_version">نسخه فعلی: </string>
+    <string name="current_version">نسخه فعلی : </string>
 
     <string name="add">تایید</string>
     <string name="cancel">لغو</string>
@@ -208,7 +208,7 @@
     <string name="app_logo">Application Logo</string>
 
     <!-- ##SEARCH-->
-    <string name="search_parameter_label">Search</string>
+    <string name="search_parameter_label">جستجو</string>
 
     <!-- ##SAMPLE DATA-->
     <string name="sample_domain1">sample.email.com</string>
