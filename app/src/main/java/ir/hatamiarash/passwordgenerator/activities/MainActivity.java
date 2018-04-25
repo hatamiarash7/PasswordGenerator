@@ -17,6 +17,7 @@
 
 package ir.hatamiarash.passwordgenerator.activities;
 
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -48,6 +49,7 @@ import ir.hatamiarash.passwordgenerator.helpers.RecyclerItemClickListener;
 import ir.hatamiarash.passwordgenerator.helpers.SwipeableRecyclerViewTouchListener;
 import ir.hatamiarash.passwordgenerator.tutorial.MasterPWTutorialActivity;
 import ir.hatamiarash.passwordgenerator.tutorial.PrefManager;
+import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -336,5 +338,9 @@ public class MainActivity extends BaseActivity {
         database.addMetaData(new MetaData(2, 2, getString(R.string.sample_domain2), getString(R.string.sample_username2), 20, 1, 1, 1, 1, 1));
         database.addMetaData(new MetaData(3, 3, getString(R.string.sample_domain3), getString(R.string.sample_username3), 4, 1, 0, 0, 0, 1));
     }
-
+    
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
+    }
 }

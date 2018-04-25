@@ -17,6 +17,7 @@
 
 package ir.hatamiarash.passwordgenerator.activities;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.text.method.LinkMovementMethod;
@@ -25,6 +26,7 @@ import android.widget.TextView;
 
 import ir.hatamiarash.passwordgenerator.BuildConfig;
 import ir.hatamiarash.passwordgenerator.R;
+import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
 /**
  * @author Karola Marky
@@ -57,6 +59,11 @@ public class AboutActivity extends BaseActivity {
     @Override
     protected int getNavigationDrawerID() {
         return R.id.nav_about;
+    }
+    
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
     }
 
 }

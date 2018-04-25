@@ -17,12 +17,14 @@
 
 package ir.hatamiarash.passwordgenerator.activities;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.widget.ExpandableListView;
 
 import ir.hatamiarash.passwordgenerator.R;
 import ir.hatamiarash.passwordgenerator.helpers.ExpandableListAdapter;
 import ir.hatamiarash.passwordgenerator.helpers.HelpDataDump;
+import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
@@ -55,6 +57,10 @@ public class HelpActivity extends BaseActivity {
     protected int getNavigationDrawerID() {
         return R.id.nav_help;
     }
-
+    
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
+    }
 }
 

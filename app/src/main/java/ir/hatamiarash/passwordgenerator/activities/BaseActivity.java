@@ -38,6 +38,7 @@ import android.view.View;
 import ir.hatamiarash.passwordgenerator.R;
 import ir.hatamiarash.passwordgenerator.tutorial.PrefManager;
 import ir.hatamiarash.passwordgenerator.tutorial.TutorialActivity;
+import uk.co.chrisjenx.calligraphy.CalligraphyConfig;
 
 /**
  * Created by Chris on 04.07.2016.
@@ -62,6 +63,12 @@ public abstract class BaseActivity extends AppCompatActivity implements OnNaviga
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+    
+        CalligraphyConfig.initDefault(new CalligraphyConfig.Builder()
+                .setDefaultFontPath("fonts/IRANSansMobile.ttf")
+                .setFontAttrId(R.attr.fontPath)
+                .build()
+        );
 
         mSharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
         mHandler = new Handler();

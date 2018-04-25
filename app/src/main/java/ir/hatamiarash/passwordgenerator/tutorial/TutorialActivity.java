@@ -37,6 +37,7 @@ import android.widget.TextView;
 
 import ir.hatamiarash.passwordgenerator.R;
 import ir.hatamiarash.passwordgenerator.activities.MainActivity;
+import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
 /**
  * Class structure taken from tutorial at http://www.androidhive.info/2016/05/android-build-intro-slider-app/
@@ -216,5 +217,10 @@ public class TutorialActivity extends AppCompatActivity {
             View view = (View) object;
             container.removeView(view);
         }
+    }
+    
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
     }
 }

@@ -35,6 +35,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import ir.hatamiarash.passwordgenerator.R;
+import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
 /**
  * Created by yonjuni on 04.03.17.
@@ -205,5 +206,9 @@ public class MasterPWTutorialActivity extends AppCompatActivity {
             container.removeView(view);
         }
     }
-
+    
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
+    }
 }
