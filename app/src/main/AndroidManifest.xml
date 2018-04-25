@@ -1,72 +1,72 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="ir.hatamiarash.passwordgenerator">
+          package="ir.hatamiarash.passwordgenerator">
 
-    <supports-screens
-        android:anyDensity="true"
-        android:largeScreens="true"
-        android:normalScreens="true"
-        android:resizeable="true"
-        android:smallScreens="true"
-        android:xlargeScreens="true" />
+	<supports-screens
+		android:anyDensity="true"
+		android:largeScreens="true"
+		android:normalScreens="true"
+		android:resizeable="true"
+		android:smallScreens="true"
+		android:xlargeScreens="true"/>
 
-    <application
-        android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
-        android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity
-            android:name="ir.hatamiarash.passwordgenerator.activities.SplashActivity"
-            android:theme="@style/SplashTheme">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+	<application
+		android:allowBackup="true"
+		android:icon="@mipmap/ic_launcher"
+		android:label="@string/app_name"
+		android:supportsRtl="true"
+		android:theme="@style/AppTheme">
+		<activity
+			android:name="ir.hatamiarash.passwordgenerator.activities.SplashActivity"
+			android:theme="@style/SplashTheme">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".tutorial.TutorialActivity"
-            android:parentActivityName="ir.hatamiarash.passwordgenerator.activities.MainActivity"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <activity
-            android:name=".tutorial.MasterPWTutorialActivity"
-            android:parentActivityName="ir.hatamiarash.passwordgenerator.activities.MainActivity"
-            android:theme="@style/AppTheme.NoActionBar">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="ir.hatamiarash.passwordgenerator.activities.MainActivity" />
-        </activity>
-        <activity
-            android:name="ir.hatamiarash.passwordgenerator.activities.MainActivity"
-            android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <activity
-            android:name="ir.hatamiarash.passwordgenerator.activities.AboutActivity"
-            android:label="@string/about"
-            android:parentActivityName="ir.hatamiarash.passwordgenerator.activities.MainActivity"
-            android:theme="@style/AppTheme.NoActionBar">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="ir.hatamiarash.passwordgenerator.activities.MainActivity" />
-        </activity>
-        <activity
-            android:name="ir.hatamiarash.passwordgenerator.activities.HelpActivity"
-            android:label="@string/help"
-            android:parentActivityName="ir.hatamiarash.passwordgenerator.activities.MainActivity"
-            android:theme="@style/AppTheme.NoActionBar">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="ir.hatamiarash.passwordgenerator.activities.MainActivity" />
-        </activity>
-        <activity
-            android:name="ir.hatamiarash.passwordgenerator.activities.SettingsActivity"
-            android:label="@string/title_activity_settings"
-            android:parentActivityName="ir.hatamiarash.passwordgenerator.activities.MainActivity"
-            android:theme="@style/AppTheme.NoActionBar">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="ir.hatamiarash.passwordgenerator.activities.MainActivity" />
-        </activity>
-    </application>
+				<category android:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity>
+		<activity
+			android:name=".tutorial.TutorialActivity"
+			android:parentActivityName="ir.hatamiarash.passwordgenerator.activities.MainActivity"
+			android:theme="@style/AppTheme.NoActionBar"/>
+		<activity
+			android:name=".tutorial.MasterPWTutorialActivity"
+			android:parentActivityName="ir.hatamiarash.passwordgenerator.activities.MainActivity"
+			android:theme="@style/AppTheme.NoActionBar">
+			<meta-data
+				android:name="android.support.PARENT_ACTIVITY"
+				android:value="ir.hatamiarash.passwordgenerator.activities.MainActivity"/>
+		</activity>
+		<activity
+			android:name="ir.hatamiarash.passwordgenerator.activities.MainActivity"
+			android:label="@string/app_name"
+			android:theme="@style/AppTheme.NoActionBar"/>
+		<activity
+			android:name="ir.hatamiarash.passwordgenerator.activities.AboutActivity"
+			android:label="@string/about"
+			android:parentActivityName="ir.hatamiarash.passwordgenerator.activities.MainActivity"
+			android:theme="@style/AppTheme.NoActionBar">
+			<meta-data
+				android:name="android.support.PARENT_ACTIVITY"
+				android:value="ir.hatamiarash.passwordgenerator.activities.MainActivity"/>
+		</activity>
+		<activity
+			android:name="ir.hatamiarash.passwordgenerator.activities.HelpActivity"
+			android:label="@string/help"
+			android:parentActivityName="ir.hatamiarash.passwordgenerator.activities.MainActivity"
+			android:theme="@style/AppTheme.NoActionBar">
+			<meta-data
+				android:name="android.support.PARENT_ACTIVITY"
+				android:value="ir.hatamiarash.passwordgenerator.activities.MainActivity"/>
+		</activity>
+		<activity
+			android:name="ir.hatamiarash.passwordgenerator.activities.SettingsActivity"
+			android:label="@string/title_activity_settings"
+			android:parentActivityName="ir.hatamiarash.passwordgenerator.activities.MainActivity"
+			android:theme="@style/AppTheme.NoActionBar">
+			<meta-data
+				android:name="android.support.PARENT_ACTIVITY"
+				android:value="ir.hatamiarash.passwordgenerator.activities.MainActivity"/>
+		</activity>
+	</application>
 
 </manifest>
