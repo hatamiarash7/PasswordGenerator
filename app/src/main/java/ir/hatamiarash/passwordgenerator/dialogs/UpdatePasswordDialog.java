@@ -98,7 +98,7 @@ public class UpdatePasswordDialog extends DialogFragment {
 
         builder.setView(rootView);
 
-        builder.setIcon(R.mipmap.ic_drawer);
+        builder.setIcon(R.mipmap.ic_launcher);
 
         builder.setTitle(getActivity().getString(R.string.passwords_heading));
 

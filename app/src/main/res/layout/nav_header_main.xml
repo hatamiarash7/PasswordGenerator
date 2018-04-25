@@ -25,7 +25,7 @@
 		    android:contentDescription="@string/app_logo"
 		    android:paddingEnd="@dimen/activity_horizontal_margin"
 		    android:paddingStart="@dimen/activity_horizontal_margin"
-		    android:src="@mipmap/ic_drawer"/>
+		    android:src="@mipmap/ic_launcher"/>
 
 	    <TextView
 		    android:layout_width="wrap_content"

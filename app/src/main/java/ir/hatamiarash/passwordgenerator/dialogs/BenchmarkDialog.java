@@ -61,7 +61,7 @@ public class BenchmarkDialog extends DialogFragment {
         iterations = bundle.getInt("number_iterations");
 
         builder.setView(rootView);
-        builder.setIcon(R.mipmap.ic_drawer);
+        builder.setIcon(R.mipmap.ic_launcher);
         builder.setTitle(getActivity().getString(R.string.dialog_benchmark_title));
         builder.setPositiveButton(getActivity().getString(R.string.done), null);
 

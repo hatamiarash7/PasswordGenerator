@@ -87,7 +87,7 @@ public class UpdateMetadataDialog extends DialogFragment {
         builder.setView(rootView);
         setUpData();
 
-        builder.setIcon(R.mipmap.ic_drawer);
+        builder.setIcon(R.mipmap.ic_launcher);
 
         builder.setTitle(getActivity().getString(R.string.add_new_metadata_heading));
 

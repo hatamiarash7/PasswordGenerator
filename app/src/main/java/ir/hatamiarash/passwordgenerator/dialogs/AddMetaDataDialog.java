@@ -60,7 +60,7 @@ public class AddMetaDataDialog extends DialogFragment {
         versionVisible = false;
 
         builder.setView(rootView);
-        builder.setIcon(R.mipmap.ic_drawer);
+        builder.setIcon(R.mipmap.ic_launcher);
         builder.setTitle(getActivity().getString(R.string.add_metadata_heading));
 
         database = MetaDataSQLiteHelper.getInstance(getActivity());
