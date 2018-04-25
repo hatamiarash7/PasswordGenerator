@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#024265</color>
-    <color name="colorPrimaryDark">#024265</color>
-    <color name="colorAccent">#0274B2</color>
+    <color name="colorPrimary">#1c89a3</color>
+    <color name="colorPrimaryDark">#1c89a3</color>
+    <color name="colorAccent">#f7b541</color>
     <color name="white">#ffffff</color>
-    <color name="darkblue">#024265</color>
+    <color name="darkblue">#1c89a3</color>
 
     <!-- dots inactive colors -->
-    <color name="dot_dark_screen">#026499</color>
+    <color name="dot_dark_screen">#1c89a3</color>
 
     <!-- dots active colors -->
-    <color name="dot_light_screen">#448bb2</color>
+    <color name="dot_light_screen">#28aace</color>
 
     <array name="array_dot_active">
         <item>@color/dot_light_screen</item>
