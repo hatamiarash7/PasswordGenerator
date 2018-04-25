@@ -42,10 +42,11 @@
 
         <TextView
             android:id="@+id/textViewSetHeading"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
             android:layout_marginTop="16dp"
-            android:text="@string/characterset_add" />
+            android:text="@string/characterset_add"/>
 
         <GridLayout
             android:layout_width="wrap_content"
@@ -91,10 +92,11 @@
 
             <TextView
                 android:id="@+id/textViewLengthHeading"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
                 android:layout_marginTop="16dp"
-                android:text="@string/length" />
+                android:text="@string/length"/>
 
             <TextView
                 android:id="@+id/textViewLengthDisplay"
