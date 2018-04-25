@@ -1,4 +1,4 @@
-# Privacy Friendly Password Generator
+# Android Password Generator
 
 ### API Reference
 
