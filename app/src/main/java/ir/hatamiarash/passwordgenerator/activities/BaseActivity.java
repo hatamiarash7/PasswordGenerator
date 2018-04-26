@@ -1,20 +1,3 @@
-/**
- * This file is part of Privacy Friendly Password Generator.
- * <p>
- * Privacy Friendly Password Generator is free software:
- * you can redistribute it and/or modify it under the terms of the
- * GNU General Public License as published by the Free Software Foundation,
- * either version 3 of the License, or any later version.
- * <p>
- * Privacy Friendly Password Generator is distributed in the hope
- * that it will be useful, but WITHOUT ANY WARRANTY; without even
- * the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
- * See the GNU General Public License for more details.
- * <p>
- * You should have received a copy of the GNU General Public License
- * along with Privacy Friendly Password Generator. If not, see <http://www.gnu.org/licenses/>.
- */
-
 package ir.hatamiarash.passwordgenerator.activities;
 
 import android.content.Intent;
@@ -24,6 +7,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.preference.PreferenceActivity;
 import android.preference.PreferenceManager;
+import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.NavigationView.OnNavigationItemSelectedListener;
 import android.support.v4.app.TaskStackBuilder;
@@ -81,7 +65,7 @@ public abstract class BaseActivity extends AppCompatActivity implements OnNaviga
 	
 	@Override
 	public void onBackPressed() {
-		DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+		DrawerLayout drawer = findViewById(R.id.drawer_layout);
 		if (drawer.isDrawerOpen(GravityCompat.START)) {
 			drawer.closeDrawer(GravityCompat.START);
 		} else {
@@ -92,7 +76,7 @@ public abstract class BaseActivity extends AppCompatActivity implements OnNaviga
 	protected abstract int getNavigationDrawerID();
 	
 	@Override
-	public boolean onNavigationItemSelected(MenuItem item) {
+	public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 		final int itemId = item.getItemId();
 		
 		return goToNavigationItem(itemId);
@@ -138,7 +122,7 @@ public abstract class BaseActivity extends AppCompatActivity implements OnNaviga
 	 * Enables back navigation for activities that are launched from the NavBar. See
 	 * {@code AndroidManifest.xml} to find out the parent activity names for each activity.
 	 *
-	 * @param intent
+	 * @param intent intent
 	 */
 	private void createBackStack(Intent intent) {
 		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
@@ -190,18 +174,18 @@ public abstract class BaseActivity extends AppCompatActivity implements OnNaviga
 	protected void onPostCreate(Bundle savedInstanceState) {
 		super.onPostCreate(savedInstanceState);
 		
-		Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+		Toolbar toolbar = findViewById(R.id.toolbar);
 		if (getSupportActionBar() == null) {
 			setSupportActionBar(toolbar);
 		}
 		
-		mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
+		mDrawerLayout = findViewById(R.id.drawer_layout);
 		ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
 				this, mDrawerLayout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
 		mDrawerLayout.addDrawerListener(toggle);
 		toggle.syncState();
 		
-		mNavigationView = (NavigationView) findViewById(R.id.nav_view);
+		mNavigationView = findViewById(R.id.nav_view);
 		mNavigationView.setNavigationItemSelectedListener(this);
 		
 		selectNavigationItem(getNavigationDrawerID());
